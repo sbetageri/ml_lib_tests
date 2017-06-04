@@ -8,14 +8,11 @@ d = {
 
 df = DataFrame(d)
 
+## Accessing rows
 
-print df['one'][(df['two'] > 7) & (df['two'] < 9)]
+print "Row access"
 
+print df.iloc[0]
 
-print '\n'
-
-df['one'] = 5
-
-df[['one', 'two']] = 99, 108
-
-print df
+## Syntax is df.loc[<row_value>]
+## Syntax is df.iloc[integer_index]
