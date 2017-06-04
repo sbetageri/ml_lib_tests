@@ -9,5 +9,5 @@ d = {
 
 a = np.array(['a', 'b', 'c'])
 
-series = Series(a, [1, 2, 3])
+series = Series(15, [1, 2, 3])
 print series
