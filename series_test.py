@@ -1,4 +1,10 @@
 from pandas import Series
 
-a = Series(['a', 'b', 'c'])
-print a
+d = {
+        "Name": "Sai",
+        "Alias": ["Krishna", "Rama", "Vasudeva", "Vinayaka"],
+        "Yuga": ["Sathya", "Treta", "Dwapura", "Kali"]
+    }
+
+series = Series(d)
+print series
