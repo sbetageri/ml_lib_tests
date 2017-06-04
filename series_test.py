@@ -6,5 +6,5 @@ d = {
         "Yuga": ["Sathya", "Treta", "Dwapura", "Kali"]
     }
 
-series = Series(d)
+series = Series(d, [1, 2, 3])
 print series
