@@ -16,4 +16,6 @@ print '\n'
 
 df['one'] = 5
 
-print df['one']
+df[['one', 'two']] = 99, 108
+
+print df
