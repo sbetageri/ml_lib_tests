@@ -6,23 +6,14 @@ d = {
         "three": Series([4, 5 ,6, 4], index=['a', 'b', 'c', 'd'])
     }
 
-pod = {
-    #"one": [1, 2, 3],
-    #"two": [4, 5, 6],
-    #"three": [7, 8, 9],
-    "four": {
-        "a":{
-            1:1
-        },
-        "b": {
-            2:2
-        },
-        "c": {
-            3:3
-        }
-    }
-}
+df = DataFrame(d)
 
-df = DataFrame(pod)
 
-print df
+print df['one'][(df['two'] > 7) & (df['two'] < 9)]
+
+
+print '\n'
+
+df['one'] = 5
+
+print df['one']
