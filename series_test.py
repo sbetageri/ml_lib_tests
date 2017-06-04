@@ -1,4 +1,5 @@
 from pandas import Series
+import numpy as np
 
 d = {
         "Name": "Sai",
@@ -6,5 +7,7 @@ d = {
         "Yuga": ["Sathya", "Treta", "Dwapura", "Kali"]
     }
 
-series = Series(d, [1, 2, 3])
+a = np.array(['a', 'b', 'c'])
+
+series = Series(a, [1, 2, 3])
 print series
