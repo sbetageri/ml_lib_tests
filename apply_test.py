@@ -30,15 +30,18 @@ def avg_medal_count():
                             'silver': Series(silver),
                             'bronze': Series(bronze)}
 
-    medals = numpy.matrix([gold, silver, bronze])
-    points = numpy.dot([4, 2, 1], medals)
-    print points
-    d = {
-            'country_name':Series(countries),
-            'points': Series(points)
-            }
+   # medals = numpy.matrix([gold, silver, bronze])
+   # points = numpy.dot([4, 2, 1], medals)
+   # print points
+   # d = {
+   #         'country_name':Series(countries),
+   #         'points': Series(points)
+   #         }
+   #
+   #    points_df = DataFrame()
+    df = DataFrame(olympic_medal_counts)
+    print numpy.mean(df[['gold', 'silver', 'bronze']])
+    print Series(numpy.mean(df[['gold', 'silver', 'bronze']]), index = df['country_name'])
 
-    points_df = DataFrame()
-    print d
 
 avg_medal_count()
