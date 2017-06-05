@@ -6,7 +6,10 @@ There are 3 types of variables:
 
 
 Nominal Variable:
-    Ex: Height of a person.
+    Ex: Ethnicity of a person.
+
+    Uses LabelEncoding where values between 0 and (n - 1) are generated.
+    n is the number of types of labels available.
 
 Ordinal Variable:
     Ex: Spiciness of a dish. There can be 3 values here:
@@ -14,8 +17,16 @@ Ordinal Variable:
         b) Spicy
         c) Very Spicy
 
+    The values here aren't linear.
+
     Assigning a value of 1, 2 and 3 to each of the 3 values does not accurately
     describe its meaning. (1 + 3) / 2 does not equal the value of 2, in this case.
+
+    Uses oneHotEncoding. The resulting encoding for the spiciness of a dish is:
+
+    [[1, 0, 0],     # Mild
+     [0, 1, 0],     # Spicy
+     [0, 0, 1]]     # Very Spicy
 
 
 Interval Variable:
