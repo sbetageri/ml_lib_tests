@@ -1,0 +1,23 @@
+There are 3 types of variables:
+
+    1. Nominal
+    2. Ordinal 
+    3. Interval
+
+
+Nominal Variable:
+    Ex: Height of a person.
+
+Ordinal Variable:
+    Ex: Spiciness of a dish. There can be 3 values here:
+        a) Mildly Spicy
+        b) Spicy
+        c) Very Spicy
+
+    Assigning a value of 1, 2 and 3 to each of the 3 values does not accurately
+    describe its meaning. (1 + 3) / 2 does not equal the value of 2, in this case.
+
+
+Interval Variable:
+    Ex: Number of cars present in a household. The values that the variable takes
+        is in intervals of 1.
